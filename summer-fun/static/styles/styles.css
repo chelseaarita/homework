@@ -1,0 +1,24 @@
+.navbar-custom {
+    background-color:#000;
+    color:#fff;
+    border-radius:0;
+}
+.navbar navbar-default {
+	background-color: #000;
+	color: #fff;
+}
+.navbar-form {
+	background: #000;
+	color: #fff;
+}
+.navbar-right {
+	background: #000;
+	color: #fff;
+}
+.navbar-brand {
+	background: #000;
+	color: #fff;
+}
+a {
+    color: #fff;
+}
