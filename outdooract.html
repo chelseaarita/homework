@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	</head>
+
+	<body>
+
+		<h1>Handwritten code exercise</h1>
+		
+		<!-- All the JavaScript goes here-->
+		<script type="text/javascript">
+
+		// var myMovies = [];
+		// console.log(myMovies); //independent 
+
+		// myMovies.unshift("forrest gump");
+		// console.log(myMovies); //independent 
+
+		// myMovies.push("The Big");
+		// console.log(myMovies); //independent
+
+		// myMovies.unshift("13 Going Onto 30");
+		// console.log(myMovies); // independent 
+
+		// function eatVeggies(veg) {
+		// console.log("I ate my " + eatVeggies);
+		// }
+		// eatVeggies(); // independent
+
+		var myMovies = [];
+		console.log("Staring array: " + myMovies); // class lecture
+
+		myMovies.push("The Big Lebowski");
+		console.log("Array after 1st push: " + myMovies); //class lecture - "push" goes in the back of the array
+
+		myMovies.unshift("Malcom X");
+		console.log("Array after unshift: " + myMovies); // class lecture - "unshift" goes to the front of the array
+
+		function eatVeggies(veg) {
+			// veg = "brussel sprouts"
+			console.log("I ate my " + veg);
+		}
+
+		eatVeggies("broccoli");  // class lecture - the parameter "veg" overrode the argument "broccoli" before i commented it out. 
+								
+								// can also be written as: 
+
+								// function eatVeggies(veg) {
+								// veg = "brussel sprouts"
+								// console.log("I ate my " + veg);
+								// }
+
+								// eatVeggies();
+
+
+		function walkDog(dogName, destination) {
+			console.log("I am walking " + dogName);
+			console.log("We are going to " + destination);
+			console.log("We are walking " + dogName + " to " + destination + ".");
+		}
+
+		walkDog("Rascal", "the beach");
+
+		</script>
+
+	</body>
+
+</html>
