@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+5-11 elementary
+12-14 middle
+15-18 high school
+<script>
+
+
+function gradeLevel(age) {
+	if (age > 4 && age < 12){
+		return "You're in elementary school";
+	} // can also put => 5 or <= 11
+	else if (age > 11 && age < 13){
+		return "You're in middle school";
+	} // => 12 && <= 14
+	else if (age > 14 && age < 19){
+		return "You're in high school";
+	} // =>15 && 18
+	else if (age > 20) {
+		return "You're older than high school age"
+	}
+	else (age < 4){
+		return "You're too young"
+	}
+}
+gradeLevel
+</script>
+</body>
