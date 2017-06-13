@@ -24,7 +24,13 @@
  
 	    // FOR LOOP - INCREMENTING VARIABLE METHOD
  
-	    var pets = ["Rascal", "Bear", "Molly", "Daisy", "Dido"];  // Add in the names of your or your friends' pets. eg: ["PJ", "Charlie"]
+	    var pets = ["Rascal", " Bear", " Molly", " Daisy", " Dido"];  
+	    	for (var i = 0; i < pets.length; i++) {
+	    		console.log(pets + " is so cute!")
+	    	}
+
+
+	    // Add in the names of your or your friends' pets. eg: ["PJ", "Charlie"]
  
 	    // For each of the pets you know, print "<pet name> is so cute!" Use the incrementing variable method.
  
@@ -35,7 +41,13 @@
 	    // in this array, each sub-array contains the meal name and the number of times you ate it this month
 	    // eg: var myFaveMeals = [ ["mom's spaghetti", 1], ["BBQ sausages", 2], ["pupusas", 3] ];
  
-	    var myFaveMeals = ["fish", "curry", "ramen", "poke", "waffles"];
+	    var myFaveMeals = [["fish", 5], ["chicken", 4], ["tacos", 3], ["waffles", 2]];
+	    var newFaveMeals = [];
+	    	for (var i = 0; i < myFaveMeals.length; i++) {
+	    		for (var j = 0; j < myFaveMeals[i].length; j++) {
+			}
+	    }
+	    console.log("Number of times I ate " + myFaveMeals + "this month");
  
 		// Using the method of your choice (either keyword or incrementing variable, as above),
 		// write a nested for loop that prints: "Number of times I ate <meal name> this month: <number>."
