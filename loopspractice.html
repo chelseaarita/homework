@@ -8,8 +8,15 @@
 	<script type="text/javascript">
 		
 	    // FOR LOOP - KEYWORD METHOD
+
+
  
-	    var classmates = ["Nicki", "Kara", "Denise", "Lauren", "Irena"];  // Add in the names of your classmates. eg: ["Jane", "John", "Kate"]
+	    var classmates = ["Nicki", "Kara", "Denise", "Lauren", "Irena"];  
+	      for (var classmate of classmates) {
+	      	console.log(classmates + " works really hard!");
+	      }
+		}
+	    // Add in the names of your classmates. eg: ["Jane", "John", "Kate"]
  
 	    // For each of your classmates, print "<classmate name> works really hard!" Use the keyword method.
  
@@ -28,7 +35,7 @@
 	    // in this array, each sub-array contains the meal name and the number of times you ate it this month
 	    // eg: var myFaveMeals = [ ["mom's spaghetti", 1], ["BBQ sausages", 2], ["pupusas", 3] ];
  
-	    var myFaveMeals = [];
+	    var myFaveMeals = ["fish", "curry", "ramen", "poke", "waffles"];
  
 		// Using the method of your choice (either keyword or incrementing variable, as above),
 		// write a nested for loop that prints: "Number of times I ate <meal name> this month: <number>."
