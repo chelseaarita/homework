@@ -15,25 +15,44 @@
 	      for (var classmate of classmates) {
 	      	console.log(classmates + " works really hard!");
 	      }
-		}
+		} // homework
 	    // Add in the names of your classmates. eg: ["Jane", "John", "Kate"]
  
 	    // For each of your classmates, print "<classmate name> works really hard!" Use the keyword method.
  
  
+
+ var classmates = ["MB", "T", "C", "G", "D", "N"]; 
+		for (var cm of classmates) {
+ 			console.log(cm + " works really hard!");
+ 		} // class lecture 
+ 		  // prints out classmates' names one per line, which is what the hw assignment was. forgot to add the variable of 'classmate' plus string
+
+
+
  
 	    // FOR LOOP - INCREMENTING VARIABLE METHOD
  
 	    var pets = ["Rascal", " Bear", " Molly", " Daisy", " Dido"];  
 	    	for (var i = 0; i < pets.length; i++) {
 	    	  console.log(pets + " is so cute!");
-	    	}
+	    	} // homework
 
 
 	    // Add in the names of your or your friends' pets. eg: ["PJ", "Charlie"]
  
 	    // For each of the pets you know, print "<pet name> is so cute!" Use the incrementing variable method.
  
+
+ 	var pets = ["Pig", "Nemo", "Sophie"];
+ 
+ 		for (var i = 0; i < pets.length; i++) {
+ 			console.log(pets[i] + " is so cute!");
+ 		} // class lecture
+ 		  // again printing the pets' names one per line.
+
+
+
  
  
 	    // NESTED FOR LOOP
@@ -46,7 +65,35 @@
 	    	  for (var j = 0; j < myFaveMeals[i].length; j++) {
 			}
 	    }
-	    console.log("Number of times I ate " + myFaveMeals + "this month");
+	    console.log("Number of times I ate " + myFaveMeals + "this month"); //homework
+
+
+	    var myFaveMeals = [ ["green smoothie", 12], ["pizza", 3], ["cheeseburgers", 5], ["salad", 10], ["fish", 9] ];
+ 
+		// Using the method of your choice (either keyword or incrementing variable, as above),
+		// write a nested for loop that prints: "Number of times I ate <meal name> this month: <number>."
+ 
+		// outer for loop - contols iteration through outermost array
+		for (var meal of myFaveMeals) {
+ 
+			// inner loop - controls iteration through innermost arrays
+			for (var i = 0; i < meal.length; i++) {
+ 
+				// if the index is a string, do a thing
+				// else if it's a number, do something different
+ 
+				// for loop 
+ 
+				if (i < 1) {
+					console.log("Number of times I ate " + meal[i] + " this month: " + meal[i + 1] + ".");
+				} // we put the console.log in within this loop, because the code if (i < 1) { is a part of the console.log statement.
+ 
+				
+			}
+ 
+		} // class lecture using method and increment method
+ 
+
  
 		// Using the method of your choice (either keyword or incrementing variable, as above),
 		// write a nested for loop that prints: "Number of times I ate <meal name> this month: <number>."
