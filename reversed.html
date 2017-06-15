@@ -12,7 +12,7 @@
         for (var i = loopy.length - 1; i >= 0; --i) {
         	a = "This is a string";
 
-		}
+		} // hw
  //pass in a string
 // return a reversed string that goes in a function
  
@@ -28,10 +28,19 @@ function loopy(myStr) {
 
         }
 }
-loopy(a)
+loopy(a) // hw
 
+function reverseString(myStr) {
+	var str = ""; // new variable because we can't modify the string. strings are immutable. don't forget 'var'! 
+	for (var i = myStr.length - 1; i >= 0; i--) {
+		str += myStr[i]; // concatenating an empty character together with the parameter. 
+						//'i' to index into the string.
+	}
+ console.log(str);
+ return str;
+}
 
-
+reverseString("Hello") // solution from class lecture. i was close! 
 
 // loopy(a) calls itself outside the function
 
