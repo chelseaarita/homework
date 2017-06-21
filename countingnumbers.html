@@ -22,13 +22,14 @@ Remember to call your function and pass in a valid argument.
 
 // write a function called countChars with the parameter called myStr.
 function countChars(myStr){
- var charCount = {};
-
 
 
 // we want to initalize a local variable which is an object called charCount. The format for the property-attribute pairs should look like this: "a": 2
-for (var i = 0; myStr.length + 1; i <= 0; i++) {
-	str += myStr[i];
+var charCount = {}; 
+
+for (var i = 0; i <= myStr.length - 1; i++) // - 1 to be sure we're starting at 0 
+{
+	// str += myStr[i]; 
 }
 // your function should look at each chracter in the input string (arugment).
  
@@ -36,10 +37,11 @@ for (var i = 0; myStr.length + 1; i <= 0; i++) {
  //returns a boolean
 
 if(charCount.hasOwnProperty(myStr[i]) === false) {
-
-
+	return charCount[i]
+} else if (){
+	return
 }
-
+}
 //if.hasOwnProperty()
 
 
@@ -51,8 +53,46 @@ if and else if
 console.log();
 charCount[""]
 
-//
+// -------------------- class discussion -----------------------
 
+function countChars(myStr) {
+	var charCount = {};
+	for (var i = 0; i <= myStr.length - 1; i++) {
+		var temp = myStr[i];
+
+		if (charCount.hasOwnProperty([temp])) {
+			charCount[temp] += 1;
+		}
+
+		else {
+			charCount[temp] = 1;
+		} 
+	}
+	console.log(charCount);
+	return charCount;
+
+}
+
+countChars("racecar");
+
+// ------------------------------------------------------------
+
+
+// objects don't have indexes so it starts with 1.
+
+
+// ---------------- profile lookup reference -------------------
+
+for (i = 0; i <= contacts.length - 1; i++) {
+
+  if (contacts[i].firstName === firstName && contacts[i].hasOwnProperty(prop)) {
+    return contacts[i][prop];
+  }
+    else if (contacts[i].firstName === firstName && contacts[i].hasOwnProperty(prop) === false) {
+  return "No such property";
+   }
+  }
+return "No such contact";
 </script>
 </body>
 </html>
