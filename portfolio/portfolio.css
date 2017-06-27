@@ -1,0 +1,43 @@
+.tribute {
+    background: url('') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#fff;
+    background-color:#333;
+    font-family: 'Open Sans', Arial, Helvetica, Sans-Serif;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.hello {
+  background: #000;
+}
+
+.navbar {
+  padding: 35px 0px 35px 0px;
+  letter-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.navtext {
+  letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+}
+body { 
+  font-family: 'Crimson Text', serif;
+  
+}
+
+.bioleft {
+  font-family: 'Crimson Text', serif;
+  padding: 100px 45px 100px 45px; 
+}
+
+.biotext {
+  padding: 100px 0px 100px 0; 
+  
+}
