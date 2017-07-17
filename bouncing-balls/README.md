@@ -7,4 +7,4 @@ We are currently learning Object-Oriented Programming (OOP). One of things I lea
 I'm still fascinated by the fact you can write so many lines of code and come up with something like this project. It's really cool. 
 
 ## Screenshot
-(https://github.com/chelseaarita/homework/blob/master/bouncing-balls/screenshot.png)
+![Screenshot](screenshot.png)
