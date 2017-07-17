@@ -63,14 +63,14 @@ function loop() {
   ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
   ctx.fillRect(0, 0, width, height);
 
-  while (balls.length < 450) {
+  while (balls.length < 2550) {
     var ball = new Ball(
       random(0,width),
       random(0,height),
       random(-2,2),
       random(-2,2),
       'rgb(' + (0 + ',' + 191 + ',' + 255) +')',
-      random(2,5)
+      random(5,5)
     );
     balls.push(ball);
   }
@@ -78,9 +78,26 @@ function loop() {
   for (var i = 0; i < balls.length; i++) {
     balls[i].draw();
     balls[i].update();
+    // balls[i].collisionDetect();
   }
 
   requestAnimationFrame(loop);
 }
 
+Ball.prototype.collisionDetect = function() {
+  for (var j = 0; j < balls.length; j++) {
+    if (!(this === balls[j])) {
+      var dx = this.x - balls[j].x;
+      var dy = this.y - balls[j].y;
+      var distance = Math.sqrt(dx * dx + dy * dy);
+
+      if (distance < this.size + balls[j].size) {
+        balls[j].color = this.color = 'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) +')';
+      }
+    }
+  }
+}
+
 loop();
+
+
